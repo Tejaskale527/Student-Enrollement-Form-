@@ -1,0 +1,218 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-left: 2px solid #06d6a0;
+    border-right: 2px solid #06d6a0;
+    border-bottom: 2px solid #06d6a0;
+
+  }
+
+  .main,
+  .side {
+    padding: 2%;
+  }
+  
+  @media(max-width: 600px){
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    .seperation-border {
+    display: none;
+    }
+  }
+
+
+
+
+.mainHeading{
+    text-align: center;
+    background-color: #06d6a0;
+    padding: 5px;
+    margin:0;
+    font-size: 1.9rem;
+    color:white;
+}
+
+/* Enroll Table */
+
+.fadeIn {
+    animation: fadeIn 2s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.enroll-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionHeading {
+    display: flex;
+    align-items: center;
+    background-color: #b9dd16;
+    color: #fff;
+    
+    border: solid 2px #a8a8a6;
+}
+
+  
+  .description {
+  
+    border-right: solid 2px #bfd200;
+    margin-bottom: 0;
+    width: 70%;
+  }
+  
+  .Image {
+    margin-bottom: 0;
+    width: 25%;
+  }
+  
+  .infoText {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .userName {
+    font-weight: bold;
+  }
+  
+  .wrapper {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    justify-content: space-between;
+    border: solid 2px #bfd200;
+    border-top: none;
+    animation: fadeIn 2s;
+    position: relative;
+  }
+  
+
+  @media screen and (max-width: 1000px) {
+    .linkTag{
+        width: 12rem !important;
+    }
+    
+  }
+  .linkTag{
+    width: 20rem;
+}
+  
+  
+  .wrapper:nth-child(odd) {
+    background-color: #fff;
+  }
+  .wrapper:nth-child(even) {
+    background-color:white;
+  }
+  
+  .textInfoContainer {
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: solid 2px #bfd200;
+    padding: 10px;
+  }
+  
+  .imageContainer {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .userImage {
+    height: auto;
+    width: 105px;
+  }
+  .linkTag{
+   
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+  }
+/* enroll table end */
+
+
+.seperation-border {
+    /* box-sizing: border-box; */
+    left: 50%;
+    width: 1.3px;
+    height: 45vh;
+    background:#06d6a0;
+    position: absolute;
+}
+
+
+input[type=text], select, input[type=email] {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .btn{
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10%;
+    transition: .3s;
+    
+  }
+
+  .enroll-btn{
+    background-color: #007bff;
+    min-width: 120px;
+  }
+  .enroll-btn:hover{
+    background-color: #459BF8;
+  }
+  .clear-btn{
+      background-color: #dc3545;
+      max-width: 33px;
+  }
+  .clear-btn:hover{
+      background-color: #F84545;
+  }
+  
+  
+  
+  .container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

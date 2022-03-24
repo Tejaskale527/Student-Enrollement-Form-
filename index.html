@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">  <!-- Declare address-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Scale Responsive //-->
+    <title>Student Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1 class="mainHeading">Student Enrollment Form</h1>
+
+    <div class="grid">
+        <article class="main">
+            <form id="enrollStudForm" onsubmit="getFormData();return false">
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name *</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email *</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="website">Website *</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="website" name="website" placeholder="" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="image">Image Link *</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="image" name="image" placeholder="" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="gender">Gender </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="radio" id="male" name="gender" value="male" >
+                        <label for="male" style="padding: 5px 0 0 0;">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female" >
+                        <label for="female" style="padding: 0;">Female</label>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="gender">Skills</label>
+                    </div>
+                    <div class="col-75">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" class="skills" value="java" name="skills">Java
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" class="skills" value="html" name="skills">HTML
+                        </label>
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox" class="skills" value="css" name="skills">CSS
+                        </label>
+                    </div>
+                </div>
+
+
+                <br>
+                <div class="row">
+                    <input type="submit" class="btn enroll-btn" value="Enroll Student">
+                    <input type="btn" class="btn clear-btn" value="Clear" onclick="clearData()">
+                </div>
+            </form>
+        </article>
+        <hr class="seperation-border">  <!--Border defined-->
+
+        <section class="side">
+            <div class="enroll-table">
+                <div id="enrolled-students">
+                    <div class="enroll-heading">
+                        <h2>Enrolled Students</h2>
+                    </div>
+
+                    <div class="sectionHeading">
+                        <p class="description">Description</p>
+                        <p class="Image">Image</p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
